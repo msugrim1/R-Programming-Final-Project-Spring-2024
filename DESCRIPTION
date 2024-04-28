@@ -1,0 +1,17 @@
+Package: Sugrim
+Type: Package
+Title: Final Project Package
+Version: 0.1.0
+Authors@R: person("Matt", "Sugrim", email = "msugrim@usf.edu",
+                   role = c("aut", "cre"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This package will be used for the final project for
+             R Programming 2024. The final project will consist of several
+             pieces of code that will assist in mapping coordinates and
+             calculating values in regards to school neighborhood poverty
+             estimates and standard errors.
+License: use_cc0_license()
+Depends: install.packages("Sugrim", dependencies = TRUE)
+         library(Sugrim)
+Encoding: UTF-8
+LazyData: true

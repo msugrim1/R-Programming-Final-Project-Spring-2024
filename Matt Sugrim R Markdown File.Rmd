@@ -1,0 +1,64 @@
+---
+title: "Matt Sugrim Final Project Markdown File"
+author: "Matt Sugrim"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This R Markdown File will be used to document the data and functions that I will utilize in order to complete the final project.
+
+Data: The data that I used comes from the School Neighborhood Poverty Estiamtes for 2020 - 2021.
+Link to dataset: https://catalog.data.gov/dataset/school-neighborhood-poverty-estimates-current-ab636
+
+Functions Used:
+
+Basic Calculations:
+addition <- function(x,y)
+{
+  result <- x + y
+
+  print("Result: ")
+  print(result)
+}
+
+subtraction <- function(x,y)
+{
+  result <- y - x
+
+  print("Result: ")
+  print(result)
+}
+
+multiplication <- function(x,y)
+{
+  result <- x * y
+
+  print("Result: ")
+  print(result)
+}
+
+division <- function(x,y)
+{
+  result <- x / y
+
+  print("Result: ")
+  print(result)
+}
+
+Mapping Functions:
+mapfunc <- function(data,x,y)
+{
+  mapview(data, xcol = x, ycol = y, crs = 4269, grid = FALSE)
+}
+
+Linear Regression Function:
+LM <- function(data, x, y)
+{
+  lm(x ~ y, data)
+}
